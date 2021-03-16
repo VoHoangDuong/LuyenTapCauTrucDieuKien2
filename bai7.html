@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = Number(prompt("Nhập vào a "));
+            let b = Number(prompt("Nhập vào b"));
+            let c = Number(prompt("Nhập vào c"));
+            let delta = b ** 2 - 4 * a * c;
+            let x = -b / (2 * a);
+            let x1 = ((-b + Math.sqrt(delta)) / 2) * a;
+            let x2 = ((-b - Math.sqrt(delta)) / 2) * a;
+            if (a == 0) {
+                alert("Không phải phương trình bậc 2");
+            } else if (delta < 0) {
+                alert("Phương trình vô nghiệm");
+            } else if (delta == 0) {
+                alert(
+                    "Phương trình có nghiệm kép là" +
+                        " " +
+                        " x1" +
+                        "=" +
+                        " x2" +
+                        "=" +
+                        x
+                );
+            } else {
+                alert(
+                    "Phương trình có 2 nghiệm phân biệt là" +
+                        "x1" +
+                        "=" +
+                        x1 +
+                        "và" +
+                        "x2" +
+                        "=" +
+                        x2
+                );
+            }
+        </script>
+    </body>
+</html>
